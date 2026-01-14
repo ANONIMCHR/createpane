@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="galaxy-bg">
+
+<div class="container">
+
+    <h1 class="title">Create Panel</h1>
+
+    <div class="card">
+        <label>Pilih Tipe Panel:</label>
+        <select id="panelType">
+            <option value="unli">Unlimited Panel</option>
+            <option value="admin">Admin Panel</option>
+        </select>
+
+        <div id="adminKeyBox" style="display:none;">
+            <input id="adminKey" placeholder="Masukkan Admin Key">
+        </div>
+
+        <button id="createBtn" class="glow-btn" onclick="createPanel()">Create Panel</button>
+    </div>
+
+    <h2>Status Akun</h2>
+    <div class="card">
+        <img id="profilePic" class="profile-img">
+        <p><b>Username:</b> <span id="accUser"></span></p>
+        <p><b>Password:</b> <span id="accPass"></span></p>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
