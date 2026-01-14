@@ -7,16 +7,29 @@
 <body class="galaxy-bg">
 
 <div class="login-box">
-    <div class="video-box">
-        <video src="https://files.catbox.moe/xxxxxx.mp4" autoplay loop muted></video>
+
+    <div class="input-box">
+        <div class="video-box">
+            <video src="https://files.catbox.moe/xxxxxx.mp4" autoplay loop muted></video>
+        </div>
     </div>
 
-    <h2>Login</h2>
+    <h2 style="text-align:center; margin-top:10px;">Login</h2>
 
-    <input id="username" placeholder="Username">
-    <input id="password" type="password" placeholder="Password">
+    <div class="input-box">
+        <label>Username:</label>
+        <input id="username" placeholder="Masukkan username">
+    </div>
 
-    <button class="glow-btn" onclick="login()">Masuk</button>
+    <div class="input-box">
+        <label>Password:</label>
+        <input id="password" type="password" placeholder="Masukkan password">
+    </div>
+
+    <div class="input-box">
+        <button class="glow-btn" onclick="login()">Masuk</button>
+    </div>
+
 </div>
 
 <script src="app.js"></script>
