@@ -6,11 +6,24 @@
 </head>
 <body class="galaxy-bg">
 
-<div class="container">
+<div class="top-menu">
+    <button class="switch-btn" onclick="showCreate()">Create Panel</button>
+    <button class="switch-btn" onclick="showStatus()">Status Akun</button>
+</div>
+
+<!-- ================= CREATE PANEL SECTION ================= -->
+<div id="createSection" class="container">
 
     <h1 class="title">Create Panel</h1>
 
     <div class="card">
+
+        <label>Username Panel:</label>
+        <input id="panelUser" placeholder="Masukkan username panel">
+
+        <label>Password Panel:</label>
+        <input id="panelPass" placeholder="Masukkan password panel">
+
         <label>Pilih Tipe Panel:</label>
         <select id="panelType">
             <option value="unli">Unlimited Panel</option>
@@ -18,13 +31,20 @@
         </select>
 
         <div id="adminKeyBox" style="display:none;">
+            <label>Admin Key:</label>
             <input id="adminKey" placeholder="Masukkan Admin Key">
         </div>
 
         <button id="createBtn" class="glow-btn" onclick="createPanel()">Create Panel</button>
     </div>
 
-    <h2>Status Akun</h2>
+</div>
+
+<!-- ================= STATUS AKUN SECTION ================= -->
+<div id="statusSection" class="container" style="display:none;">
+
+    <h1 class="title">Status Akun</h1>
+
     <div class="card">
         <img id="profilePic" class="profile-img">
         <p><b>Username:</b> <span id="accUser"></span></p>
