@@ -75,3 +75,28 @@ input, select {
 .switch-btn:hover {
     box-shadow: 0 0 20px #4aa3ff;
 }
+
+.input-box {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px #1e90ff;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    color: white;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-box input, .input-box select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
